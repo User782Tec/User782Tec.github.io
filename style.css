@@ -1,0 +1,10 @@
+html {
+    background-color: powderblue;
+}
+html * {
+    margin: 0px auto;
+}
+.title {
+    font-size: 4em;
+    color: Blue;
+}
