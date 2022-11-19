@@ -16,5 +16,6 @@ html {
 }
 @font-face {
     font-family: SourceHanSansCN-Light;
-    src: url('resources/SourceHanSansCN-Light.otf');
+    src: url('resources/SourceHanSansCN-Light.otf'),
+         url('https://pan.mcbebbs.ga/api/v3/file/source/9902/SourceHanSansCN-Light.otf?sign=sbHRU9loBCcgikZB4hbqONRN2RKFaXloFHhhpJt-7II%3D%3A0');
 }
