@@ -4,6 +4,10 @@ html {
 * {
     font-family: SourceHanSansCN-Light;
 }
+.container {
+    display: flex;
+    justify-content: center;
+}
 .center {
     margin: auto;
 }
