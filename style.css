@@ -1,8 +1,9 @@
 html {
-    background-color: powderblue;
+    background-color: #e6f9fd;
 }
-html * {
-    margin: 0px auto;
+* {
+    margin: auto;
+    width: auto;
     font-family: SourceHanSansCN-Light;
 }
 .title {
