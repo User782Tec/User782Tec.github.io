@@ -3,8 +3,13 @@ html {
 }
 html * {
     margin: 0px auto;
+    font-family: SourceHanSansCN-Light;
 }
 .title {
     font-size: 4em;
     color: Blue;
+}
+@font-face {
+    font-family: SourceHanSansCN-Light;
+    src: url('resources/SourceHanSansCN-Light.otf');
 }
