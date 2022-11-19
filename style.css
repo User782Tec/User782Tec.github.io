@@ -1,9 +1,6 @@
 html {
     background-color: #e6f9fd;
 }
-* {
-    font-family: SourceHanSansCN-Light;
-}
 .center {
     margin: auto;
 }
@@ -12,6 +9,6 @@ html {
 }
 .title {
     font-size: 4em;
-    font-weight: 50;
+    font-weight: 30;
     color: Blue;
 }
