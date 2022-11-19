@@ -5,7 +5,7 @@
         <title>简易图形画图工具(Canvas绘制测试)</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <style>
-            div {
+            .btn {
                 display: inline-block;
                 width: 100px;
                 height: 20px;
@@ -15,20 +15,26 @@
             input[type=number] {
                 width: 3em;
             }
+            .center {
+                width: 50%;
+                margin: auto;
+            }
         </style>
     </head>
     <body>
-        <h1 class="title">简易图形画图工具</h1>
-        <canvas id="canvas" width="400" height="300"></canvas><br />
-        颜色 <input type="color" id="color"> 
-        宽 <input type="number" id="width"> 
-        高 <input type="number" id="height"> 
-        X坐标 <input type="number" id="pos-x"> 
-        Y坐标 <input type="number" id="pos-y"><br />
-        <div onclick="circle()">绘制圆形</div>
-        <div onclick="rect()">绘制方形</div>
-        <div onclick="triangle()">绘制三角形</div>
-        <div onclick="text()">添加文本</div>
+        <div class="center">
+            <h1 class="title">简易图形画图工具</h1>
+            <canvas id="canvas" width="400" height="300"></canvas><br />
+            颜色 <input type="color" id="color"> 
+            宽 <input type="number" id="width"> 
+            高 <input type="number" id="height"> 
+            X坐标 <input type="number" id="pos-x"> 
+            Y坐标 <input type="number" id="pos-y"><br />
+            <div onclick="circle()" class="btn">绘制圆形</div>
+            <div onclick="rect()" class="btn">绘制方形</div>
+            <div onclick="triangle()" class="btn">绘制三角形</div>
+            <div onclick="text()" class="btn">添加文本</div>
+        </div>
     </body>
     <script>
         var ctx = document.getElementById("canvas").getContext("2d");
