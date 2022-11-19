@@ -2,9 +2,13 @@ html {
     background-color: #e6f9fd;
 }
 * {
-    margin: auto;
-    width: auto;
     font-family: SourceHanSansCN-Light;
+}
+.center {
+    margin: auto;
+}
+.hide {
+    display: none;
 }
 .title {
     font-size: 4em;
