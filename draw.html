@@ -44,6 +44,7 @@
             var ctx = c.getContext('2d');
             var w;
             var h;
+            var mousedown;
             function setSize() {
                 w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
                 h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -106,12 +107,15 @@
                 }
                 ctx.beginPath();
                 ctx.moveTo(e.pageX,e.pageY);
+                mousedown = true;
             });
             c.addEventListener("mousemove",(e) => {
-                ctx.lineWidth = document.getElementById("width");
-                ctx.lineTo(e.pageX,e.pageY);
-                ctx.stroke();
-                //console.log("触摸坐标：",e.clientX,e.clientY);
+                if (mousedown){
+                    ctx.lineWidth = document.getElementById("width");
+                    ctx.lineTo(e.pageX,e.pageY);
+                    ctx.stroke();
+                    //console.log("触摸坐标：",e.clientX,e.clientY);
+                }
             });
             c.addEventListener("mouseup",(e) => {
                 ctx.stroke();
