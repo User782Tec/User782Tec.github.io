@@ -83,6 +83,9 @@
                 if (document.getElementById("tools").value == "rubber") {
                     ctx.strokeStyle = "rgb(255,255,255)";
                 }
+                else if(rainbow) {
+                    ctx.strokeStyle = rainbowcolor;
+                }
                 else {
                     ctx.strokeStyle = document.getElementById("color").value;
                 }
