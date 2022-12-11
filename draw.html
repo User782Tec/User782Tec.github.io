@@ -96,6 +96,26 @@
             c.addEventListener("touchend",(e) => {
                 ctx.stroke();
             });
+            c.addEventListener("mousedown",(e) => {
+                ctx.lineWidth = document.getElementById("width").value;
+                if (document.getElementById("tools").value == "rubber") {
+                    ctx.strokeStyle = "rgb(255,255,255)";
+                }
+                else {
+                    ctx.strokeStyle = document.getElementById("color").value;
+                }
+                ctx.beginPath();
+                ctx.moveTo(e.pageX,e.pageY);
+            });
+            c.addEventListener("mousemove",(e) => {
+                ctx.lineWidth = document.getElementById("width");
+                ctx.lineTo(e.pageX,e.pageY);
+                ctx.stroke();
+                //console.log("触摸坐标：",e.clientX,e.clientY);
+            });
+            c.addEventListener("mouseup",(e) => {
+                ctx.stroke();
+            });
             setSize();
         </script>
     </body>
