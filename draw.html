@@ -135,7 +135,7 @@
                     rainbow = true;
                     i = 0;
                     var int = window.setInterval(() => {
-                        while (i != 360) {
+                        for (;i < rainbowcolor;i++) {
                             rainbowcolor = "hsl(" + i + ",100%,50%)";
                             i++;
                         }
